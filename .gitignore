@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+security-report.md
+.DS_Store
+node_modules/

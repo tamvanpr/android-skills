@@ -1,0 +1,47 @@
+{
+  "name": "android-skills",
+  "version": "2.3.0",
+  "description": "Installer for the Android UI skill pack (build & security review) for OpenCode, Claude Code, Codex CLI, Cursor, Windsurf, Gemini CLI, and GitHub Copilot. Works via npx, npm, or git.",
+  "license": "MIT",
+  "author": "tamvanpr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamvanpr/android-skills.git"
+  },
+  "keywords": [
+    "android",
+    "skill",
+    "agent",
+    "opencode",
+    "claude-code",
+    "codex",
+    "cursor",
+    "windsurf",
+    "gemini-cli",
+    "copilot",
+    "ui",
+    "security",
+    "jetpack-compose"
+  ],
+  "bin": {
+    "android-skills": "bin/android-skills.js"
+  },
+  "files": [
+    "bin/",
+    "install.py",
+    "android-ui/",
+    "opencode/",
+    "README.md",
+    "README.id.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "postinstall": "node bin/postinstall.js",
+    "setup": "node bin/android-skills.js",
+    "validate": "node bin/android-skills.js --validate",
+    "test": "python3 tests/run_tests.py"
+  }
+}
